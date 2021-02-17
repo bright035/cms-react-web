@@ -15,12 +15,12 @@ import {
   message 
 } from "antd";
 import "antd/dist/antd.css";
-import {axiosPost} from './../lib/service';
-import {isHttpSuccess} from '../lib/service'
+import {axiosPost} from '../../lib/service';
+import {isHttpSuccess} from '../../lib/service'
 
 const {Title} = Typography;
 
-export default function Login() {
+export default function Login1() {
   const router = useRouter();
   
   const onFinish = async (values) => {

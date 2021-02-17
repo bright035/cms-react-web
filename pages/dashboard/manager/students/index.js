@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import styles from '../../styles/Home.module.css';
+import styles from '../../../../styles/Home.module.css';
 import React, {useState,useEffect} from 'react';
 import "antd/dist/antd.css";
-import AppLayout from '../../lib/component/layout';
-import {axiosGetCountries} from '../../lib/service';
-import {StudentTable} from '../../lib/component/studentTable';
+import AppLayout from '../../../../lib/component/layout';
+import {axiosGetCountries} from '../../../../lib/service';
+import {StudentTable} from '../../../../lib/component/studentTable';
 
 
 export default function Manager() {
@@ -24,7 +24,6 @@ export default function Manager() {
     
     return (
       <AppLayout>
-        <p>breadCrumble</p>
         <StudentTable></StudentTable>
       </AppLayout>
     );
