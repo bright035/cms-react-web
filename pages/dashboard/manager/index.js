@@ -11,7 +11,7 @@ export default function Manager() {
     const router = useRouter();
 
     useEffect(() => {
-      router.push('/dashboard/manager/overview',{shallow:true});
+      router.push('/dashboard/manager/overview',undefined, {shallow:true});
     }, []);
     
     return (

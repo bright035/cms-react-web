@@ -5,6 +5,7 @@ import "antd/dist/antd.css";
 import AppLayout from '../../../../lib/component/layout';
 import {axiosGetCountries} from '../../../../lib/service';
 import {StudentTable} from '../../../../lib/component/studentTable';
+import { message } from 'antd';
 
 
 export default function Manager() {
@@ -19,7 +20,7 @@ export default function Manager() {
           });
         localStorage?.setItem('CountryList',JSON.stringify(countryList)); 
       }
-      )
+      ).catch((error)=>{message.error(error.message)})
     }, [version]);
     
     return (

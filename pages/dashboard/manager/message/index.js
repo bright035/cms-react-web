@@ -24,7 +24,7 @@ export default function Manager() {
     
     return (
       <AppLayout>
-        <p>breadCrumb</p>
+
         
       </AppLayout>
     );
