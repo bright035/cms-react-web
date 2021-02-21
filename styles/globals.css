@@ -101,3 +101,13 @@ a {
   padding-top: 16px;
   min-height: auto;
 }
+
+.scrollbar {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.scrollbar::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
